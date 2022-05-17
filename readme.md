@@ -9,7 +9,7 @@
 - [Organização e estruturação do projeto](#organizacao)
 - [Desenvolvimento](#desenvolvimento)
 
-# Tecnologias Utilizadas <a name="tecnologias"></a>
+## Tecnologias Utilizadas <a name="tecnologias"></a>
 
 - [**React**](https://pt-br.reactjs.org/)
 - [**React Hooks**](https://pt-br.reactjs.org/docs/hooks-intro.html)
