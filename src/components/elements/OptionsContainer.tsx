@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { IChildren } from '../../interfaces/propsInterfaces';
 import { useGlobalContext } from '../../store/context';
 import { IisFocused } from '../../interfaces/propsInterfaces';
 import PlacesList from './PlacesList';
