@@ -15,7 +15,7 @@ const OptionsList = () => {
 const Wrapper = styled.div`
   flex-direction: column;
   flex: 1;
-  justify-self: flex-start;
+  /* justify-self: flex-start; */
 `;
 
 export default OptionsList;

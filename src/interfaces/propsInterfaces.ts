@@ -1,3 +1,4 @@
+import { MutableRefObject } from "react";
 export interface INavItensContainer {
   children: React.ReactNode;
 }
@@ -13,4 +14,3 @@ export interface IisFocused {
 export interface IChildren {
   children: React.ReactNode;
 }
-

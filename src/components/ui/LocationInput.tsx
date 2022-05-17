@@ -11,7 +11,7 @@ const LocationInput = () => {
 
 const Input = styled.input<IisFocused>`
 
-  padding: 1.4rem 0.5rem;
+  /* padding: 1.4rem 0.5rem; */
   border-top-left-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
   border: none;

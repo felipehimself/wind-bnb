@@ -27,7 +27,7 @@ const Wrapper = styled.div<IisFocused>`
   justify-content: center;
   cursor: pointer;
   height: 4.8rem;
-  padding: 1rem 3rem;
+  padding: ${(props) => props.isFocused? 0 : '1rem 3rem'};
   transition: flex 0.3s ease;
 
   flex: ${(props) => props.isFocused && 1};

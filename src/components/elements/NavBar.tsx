@@ -7,28 +7,21 @@ import NavItensContainer from './NavItensContainer';
 import { useGlobalContext } from '../../store/context';
 import OptionsContainer from './OptionsContainer';
 import PlacesList from './PlacesList';
-import Header from './Header';
 import OptionsList from './OptionsList';
 
-const NavBar:React.FC = () => {
+const NavBar: React.FC = () => {
   const { isFocused } = useGlobalContext();
+  console.log(isFocused);
 
   return (
-    <Header>
-      <Nav>
-        {!isFocused && <img src={logo} alt='logo' />}
-        <NavItensContainer>
-          <LocationInput />
-          <AddGuestsItem />
-          <SearchButton />
-        </NavItensContainer>
-      </Nav>
-      <OptionsContainer>
-        <PlacesList />
-        <OptionsList />
-        <div style={{flex: 1}}>&nbsp;</div>
-      </OptionsContainer>
-    </Header>
+    <Nav>
+      {!isFocused && <img src={logo} alt='logo' />}
+      <NavItensContainer>
+        <LocationInput />
+        <AddGuestsItem />
+        <SearchButton />
+      </NavItensContainer>
+    </Nav>
   );
 };
 

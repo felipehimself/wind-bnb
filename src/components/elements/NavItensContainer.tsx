@@ -3,10 +3,10 @@ import { INavItensContainer } from '../../interfaces/propsInterfaces';
 import { useGlobalContext } from '../../store/context';
 
 const NavItensContainer: React.FC<INavItensContainer> = ({ children }) => {
-  const { setIsFocus, isFocused } = useGlobalContext();
+  const { setIsFocused, isFocused } = useGlobalContext();
 
   return (
-    <Wrapper isFocused={isFocused} onClick={() => setIsFocus(true)}>
+    <Wrapper isFocused={isFocused} onClick={() => setIsFocused(true)}>
       {children}
     </Wrapper>
   );

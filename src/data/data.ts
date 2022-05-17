@@ -185,7 +185,7 @@ const places: IPlaces[] = [
 
 export const options: IOptions[] = [
   {
-    type: 'adult',
+    type: 'adults',
     rule: 'Ages 13 or above',
   },
   {
