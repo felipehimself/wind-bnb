@@ -2,9 +2,14 @@ import styled from 'styled-components';
 import { IPlaces } from '../../interfaces/dataInterface';
 import locationPin from '././../../assets/location.svg';
 import { Colors } from '../../constants/colors';
-const PlaceListItem: React.FC<IPlaces> = ({ city, country }) => {
+
+interface IProps extends IPlaces {
+  setLocation: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const PlaceListItem: React.FC<IProps> = ({ city, country, setLocation }) => {
   return (
-    <Li>
+    <Li onClick={() => setLocation(city)}>
       <img className='pin-icon' src={locationPin} alt='location pin' />
       <span>
         {city}, {country}
@@ -35,7 +40,7 @@ const Li = styled.li`
   }
 
   span:hover {
-    border-bottom: ${()=> '1px solid ' + Colors.colorGrayLight};
+    border-bottom: ${() => '1px solid ' + Colors.colorGrayLight};
   }
 `;
 export default PlaceListItem;

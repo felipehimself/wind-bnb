@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { Colors } from '../constants/colors';
 import { IStyledComponent } from '../interfaces/propsInterfaces';
+
 export const Container = styled.main`
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 2rem;
 `;
 
 export const Button = styled.button`
@@ -19,6 +21,19 @@ export const Button = styled.button`
   :hover {
     background-color: ${() => Colors.colorPrimaryTint};
   }
+`;
+
+export const ButtonOptions = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: ${() => '1px solid ' + Colors.colorGrayLight};
+  border-radius: 4px;
+  cursor: pointer;
 `;
 
 export const H1 = styled.h1`

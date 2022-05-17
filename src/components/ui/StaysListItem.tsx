@@ -35,10 +35,16 @@ const StaysListItem: React.FC<IPlaces> = ({
 const Article = styled.article`
   width: 100%;
 
+  .img-container {
+    max-height: 24rem;
+    overflow: hidden;
+    border-radius: 2rem;
+
+  }
+
   .img-container__img {
     display: block;
     width: 100%;
-    border-radius: 2rem;
   }
 
   .type {

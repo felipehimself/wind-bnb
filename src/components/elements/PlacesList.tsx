@@ -4,7 +4,7 @@ import PlaceListItem from '../ui/PlaceListItem';
 import { IisFocused } from '../../interfaces/propsInterfaces';
 
 const PlacesList: React.FC = () => {
-  const { data, isFocused } = useGlobalContext();
+  const { data, isFocused, setLocation } = useGlobalContext();
 
   const uniqueCities = [
     ...new Map(data.map((item) => [item['city'], item])).values(),
@@ -14,7 +14,7 @@ const PlacesList: React.FC = () => {
   return (
     <Wrapper isFocused={isFocused}>
       {uniqueCities.map((place) => {
-        return <PlaceListItem key={place.title} {...place} />;
+        return <PlaceListItem key={place.title} setLocation={setLocation} {...place} />;
       })}
     </Wrapper>
   );

@@ -3,10 +3,10 @@ import { INavItensContainer } from '../../interfaces/propsInterfaces';
 import { useGlobalContext } from '../../store/context';
 
 const NavItensContainer: React.FC<INavItensContainer> = ({ children }) => {
-  const { setIsFocused, isFocused } = useGlobalContext();
+  const { isFocused } = useGlobalContext();
 
   return (
-    <Wrapper isFocused={isFocused} onClick={() => setIsFocused(true)}>
+    <Wrapper isFocused={isFocused} >
       {children}
     </Wrapper>
   );
@@ -23,6 +23,12 @@ const Wrapper = styled.div<Itest>`
   border-radius: 1.2rem;
   overflow: hidden;
   width: ${(props) => (props.isFocused ? '100%' : undefined)};
+
+  @media screen and (max-width: 540px) {
+    
+    width: 100%;
+  
+}
 
 `;
 export default NavItensContainer;

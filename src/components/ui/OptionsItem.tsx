@@ -2,23 +2,28 @@ import styled from 'styled-components';
 import { Colors } from '../../constants/colors';
 import { IOptions } from '../../interfaces/dataInterface';
 import { IoAddOutline, IoRemoveOutline } from 'react-icons/io5';
+import { ButtonOptions } from '../../styles/GlobalStyledComponents';
 
-const OptionsItem: React.FC<IOptions> = ({ type, rule }) => {
+interface IProps extends IOptions {
+  guests: { children: number; adults: number };
+  defineGuests: (type: string, option: string) => void
+}
+
+const OptionsItem: React.FC<IProps> = ({ type, rule, guests, defineGuests }) => {
+
   return (
     <Li>
       <p className='type'>{type}</p>
       <p className='rules'>{rule}</p>
-      <span className='btn-container'>
-        <button className='btn btn--minus'>
-          {/* <IoRemoveOutline color={Colors.colorGrayLight} /> */}
-          -
-        </button>
-        <span className='count'>1</span>
-        <button className='btn btn--plus'>
-          {/* <IoAddOutline color={Colors.colorGrayLight} /> */}
-          +
-        </button>
-      </span>
+      <div className='btn-container'>
+        <ButtonOptions onClick={()=> defineGuests(type, 'minus')}>
+          <IoRemoveOutline color={Colors.colorGrayLight} />
+        </ButtonOptions>
+        <span className='count'>{guests[type as keyof typeof guests]}</span>
+        <ButtonOptions onClick={()=> defineGuests(type, 'add')}>
+          <IoAddOutline color={Colors.colorGrayLight} />
+        </ButtonOptions>
+      </div>
     </Li>
   );
 };
@@ -28,7 +33,13 @@ const Li = styled.li`
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
-  /* gap: 0.5rem; */
+  
+  @media screen and (max-width: 540px) {
+    
+    align-items: center;
+  
+}
+
 
   .type {
     text-transform: capitalize;
@@ -41,7 +52,6 @@ const Li = styled.li`
     color: ${() => Colors.colorGrayLight};
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-
   }
 
   .btn-container {
@@ -52,7 +62,7 @@ const Li = styled.li`
 
   .btn {
     display: flex;
-    
+
     align-items: center;
     justify-content: center;
     background-color: transparent;

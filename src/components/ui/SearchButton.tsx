@@ -5,11 +5,19 @@ import { IisFocused } from '../../interfaces/propsInterfaces';
 import { Colors } from '../../constants/colors';
 
 const SearchButton: React.FC = () => {
-  const { isFocused } = useGlobalContext();
+  const { isFocused, setIsFocused, setOptionsToFilter, guests, location } = useGlobalContext();
+
+  const totalGuests = guests?.adults + guests?.children;
+
+  const filterItens=()=>{
+    setOptionsToFilter({city:location, maxGuests: totalGuests})
+    setIsFocused(false)
+  }
+
 
   return (
-    <Wrapper isFocused={isFocused}>
-      <div className='items-container'>
+    <Wrapper isFocused={isFocused} onClick={filterItens}>
+      <div  className='items-container'>
         <img
           className='items-container__img'
           src={searchIcon}
@@ -21,7 +29,7 @@ const SearchButton: React.FC = () => {
   );
 };
 
-const Wrapper = styled.div<IisFocused>`
+const Wrapper = styled.button<IisFocused>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,14 +37,20 @@ const Wrapper = styled.div<IisFocused>`
   height: 4.8rem;
   padding: ${(props) => props.isFocused? 0 : '1rem 3rem'};
   transition: flex 0.3s ease;
-
+  border: none;
+  background-color: transparent;
   flex: ${(props) => props.isFocused && 1};
+
+  @media screen and (max-width: 540px)  {
+    flex: 0.5
+  }
 
   .items-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem
+    gap: 0.5rem;
+    width: 100%
   }
 
   .items-container__img {
@@ -49,6 +63,15 @@ const Wrapper = styled.div<IisFocused>`
     font-weight: bold;
     color: ${()=> Colors.colorPrimary}
   }
+
+  @media screen and (max-width: 540px) {
+    
+    .items-container__text {
+      display: none
+    }
+
+  
+}
 
   
 `;

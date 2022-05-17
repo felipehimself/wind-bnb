@@ -5,24 +5,29 @@ import { IisFocused } from '../../interfaces/propsInterfaces';
 import PlacesList from './PlacesList';
 import OptionsList from './OptionsList';
 import { Button } from '../../styles/GlobalStyledComponents';
+
 const OptionsContainer: React.FC = () => {
-  const { isFocused, setIsFocused } = useGlobalContext();
+  const {
+    isFocused,
+    setIsFocused,
+    setLocation,
+    setOptionsToFilter,
+    setGuests,
+  } = useGlobalContext();
+
+  const cleanInputs = () => {
+    setLocation('');
+    setOptionsToFilter({ city: '', maxGuests: 0 });
+    setGuests({ children: 0, adults: 0 });
+  };
 
   return (
     <Wrapper isFocused={isFocused}>
       <PlacesList />
       <OptionsList />
-      <div
-        style={{
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          gap: '1rem',
-        }}
-      >
+      <div className='btns-container'>
         <Button onClick={() => setIsFocused(false)}>fechar</Button>
-        <Button>limpar</Button>
+        <Button onClick={cleanInputs}>limpar</Button>
       </div>
     </Wrapper>
   );
@@ -33,8 +38,22 @@ const Wrapper = styled.div<IisFocused>`
   align-items: flex-start;
   height: ${(props) => (props.isFocused ? '14rem' : 0)};
   transition: height 0.3s ease;
-  /* transition-delay: 0.2s; */
   overflow: hidden;
-  /* add padding condicionamente, se n vai aparecer msm com height 0 */
+  justify-content: space-between;
+
+  .btns-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  @media screen and (max-width: 540px) {
+    .btns-container {
+      align-items: flex-end;
+      flex: 0.4;
+    }
+  }
 `;
 export default OptionsContainer;

@@ -7,7 +7,7 @@ const places: IPlaces[] = [
     superHost: false,
     title: 'Stylist apartment in center of the city',
     rating: 4.4,
-    maxGuests: 3,
+    maxGuests: 8,
     type: 'Entire apartment',
     beds: 2,
     photo:

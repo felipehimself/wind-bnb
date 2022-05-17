@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
   const { isFocused } = useGlobalContext();
   return (
     <Nav>
-      {!isFocused && <img src={logo} alt='logo' />}
+      {!isFocused && <img className='logo' src={logo} alt='logo' />}
       <NavItensContainer>
         <LocationInput />
         <AddGuestsItem />
@@ -24,6 +24,12 @@ const Nav = styled.nav`
   padding: 2.2rem 0;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 540px) {
+    .logo {
+      display: none
+    }
+  }
 `;
 
 export default NavBar;
