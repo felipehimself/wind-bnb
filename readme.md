@@ -49,7 +49,7 @@ npm install
 npm run dev
 ```
 
-## Organização e estruturaÃ§Ã£o do projeto <a name="organizacao"></a>
+## Organização e estruturação do projeto <a name="organizacao"></a>
 
 O projeto está organizado e estruturado da seguinte forma:
 
