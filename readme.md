@@ -23,6 +23,7 @@
 ```
 Git
 React
+Vite
 ```
 
 - Clone o repositório com o comando **git clone**:
