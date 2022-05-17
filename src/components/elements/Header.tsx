@@ -14,8 +14,13 @@ const Header: React.FC = () => {
 };
 
 const Wrapper = styled.header`
-
-  background-color: ${()=> Colors.colorWhite}
+  position: fixed;
+  max-width: 120rem;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: ${()=> Colors.colorWhite};
+  padding-bottom: 2rem;
 
 `;
 export default Header;

@@ -5,14 +5,9 @@ import AddGuestsItem from '../ui/AddGuestsItem';
 import SearchButton from '../ui/SearchButton';
 import NavItensContainer from './NavItensContainer';
 import { useGlobalContext } from '../../store/context';
-import OptionsContainer from './OptionsContainer';
-import PlacesList from './PlacesList';
-import OptionsList from './OptionsList';
 
 const NavBar: React.FC = () => {
   const { isFocused } = useGlobalContext();
-  console.log(isFocused);
-
   return (
     <Nav>
       {!isFocused && <img src={logo} alt='logo' />}

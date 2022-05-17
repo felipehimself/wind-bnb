@@ -14,3 +14,10 @@ export interface IisFocused {
 export interface IChildren {
   children: React.ReactNode;
 }
+
+
+export interface IStyledComponent {
+  margin?:string;
+  padding?:string;
+  
+}

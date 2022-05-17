@@ -14,7 +14,7 @@ const PlacesList: React.FC = () => {
   return (
     <Wrapper isFocused={isFocused}>
       {uniqueCities.map((place) => {
-        return <PlaceListItem {...place} />;
+        return <PlaceListItem key={place.title} {...place} />;
       })}
     </Wrapper>
   );

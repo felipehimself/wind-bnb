@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Colors } from '../constants/colors';
+import { IStyledComponent } from '../interfaces/propsInterfaces';
 export const Container = styled.main`
   max-width: 120rem;
   margin: 0 auto;
@@ -16,6 +17,24 @@ export const Button = styled.button`
   transition: all 0.3s ease;
 
   :hover {
-    background-color: ${()=> Colors.colorPrimaryTint}			;
+    background-color: ${() => Colors.colorPrimaryTint};
   }
+`;
+
+export const H1 = styled.h1`
+  font-size: 2.6rem;
+  color: ${() => Colors.colorDarkGray};
+`;
+
+export const H3 = styled.h3`
+  font-size: 1.6rem;
+  color: ${() => Colors.colorGrayLight};
+  align-self: flex-end;
+`;
+
+export const FlexContainer = styled.div<IStyledComponent>`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: ${(props) => props.margin};
 `;

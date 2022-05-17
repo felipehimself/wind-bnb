@@ -6,7 +6,7 @@ const OptionsList = () => {
   return (
     <Wrapper>
       {options.map((option) => {
-        return <OptionsItem {...option} />;
+        return <OptionsItem key={option.type} {...option} />;
       })}
     </Wrapper>
   );

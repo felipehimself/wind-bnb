@@ -3,11 +3,15 @@ import { Colors } from '../../constants/colors';
 import { useGlobalContext } from '../../store/context';
 import { IisFocused } from '../../interfaces/propsInterfaces';
 const AddGuestsItem = () => {
-  const { isFocused } = useGlobalContext();
+  const { isFocused, guests } = useGlobalContext();
 
   return (
     <Wrapper isFocused={isFocused}>
-      <span>Add Guests</span>
+      <span>
+        {(guests?.adults ?? 0) + (guests?.children ?? 0) == 0
+          ? 'Add Guests'
+          : (guests?.adults ?? 0) + (guests?.children ?? 0) }
+      </span>
     </Wrapper>
   );
 };
