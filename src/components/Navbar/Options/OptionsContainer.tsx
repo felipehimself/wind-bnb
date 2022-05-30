@@ -25,8 +25,8 @@ const OptionsContainer: React.FC = () => {
       <PlacesList />
       <OptionsList />
       <div className='btns-container'>
-        <Button onClick={() => setIsFocused(false)}>fechar</Button>
-        <Button onClick={cleanInputs}>limpar</Button>
+        <Button onClick={() => setIsFocused(false)}>close</Button>
+        <Button onClick={cleanInputs}>clean</Button>
       </div>
     </Wrapper>
   );
