@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { options } from '../../data/data';
-import { useGlobalContext } from '../../store/context';
-import OptionsItem from '../ui/OptionsItem';
+import { options } from '../../../data/data';
+import { useGlobalContext } from '../../../store/context';
+import OptionsItem from './OptionsItem';
 
 const OptionsList = () => {
   const { guests, setGuests } = useGlobalContext();

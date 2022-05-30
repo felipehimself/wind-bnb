@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Colors } from '../../constants/colors';
-import { useGlobalContext } from '../../store/context';
-import { IisFocused } from '../../interfaces/propsInterfaces';
+import { Colors } from '../../../constants/colors';
+import { useGlobalContext } from '../../../store/context';
+import { IisFocused } from '../../../interfaces/propsInterfaces';
 
 const LocationInput:React.FC = () => {
   const { isFocused, location, setLocation, setIsFocused } = useGlobalContext();

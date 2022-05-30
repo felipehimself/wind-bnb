@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { FlexContainer } from '../../styles/GlobalStyledComponents';
-import { IPlaces } from './../../interfaces/dataInterface';
+import { IPlaces } from '../../interfaces/dataInterface';
 import star from './../../assets/star.svg';
 import { Colors } from '../../constants/colors';
 

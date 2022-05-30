@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { useGlobalContext } from '../../store/context';
-import searchIcon from './../../assets/search.svg';
-import { IisFocused } from '../../interfaces/propsInterfaces';
-import { Colors } from '../../constants/colors';
+import { useGlobalContext } from '../../../store/context';
+import searchIcon from './../../../assets/search.svg';
+import { IisFocused } from '../../../interfaces/propsInterfaces';
+import { Colors } from '../../../constants/colors';
 
 const SearchButton: React.FC = () => {
   const { isFocused, setIsFocused, setOptionsToFilter, guests, location } = useGlobalContext();

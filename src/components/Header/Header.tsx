@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Colors } from '../../constants/colors';
 import { IChildren } from '../../interfaces/propsInterfaces';
-import NavBar from './NavBar';
-import OptionsContainer from './OptionsContainer';
+import NavBar from '../Navbar/NavBar';
+import OptionsContainer from '../Navbar/Options/OptionsContainer';
 
 const Header: React.FC = () => {
   return (

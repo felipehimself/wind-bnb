@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { useGlobalContext } from '../../store/context';
-import { H1, H3, FlexContainer } from '../../styles/GlobalStyledComponents';
-import StaysList from './StaysList';
+import { useGlobalContext } from '../store/context';
+import { H1, H3, FlexContainer } from '../styles/GlobalStyledComponents';
+import StaysList from '../components/Stays/StaysList';
 const Main = () => {
 
   const {data, optionsToFilter} = useGlobalContext() 

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Colors } from '../../constants/colors';
-import { IOptions } from '../../interfaces/dataInterface';
+import { Colors } from '../../../constants/colors';
+import { IOptions } from '../../../interfaces/dataInterface';
 import { IoAddOutline, IoRemoveOutline } from 'react-icons/io5';
-import { ButtonOptions } from '../../styles/GlobalStyledComponents';
+import { ButtonOptions } from '../../../styles/GlobalStyledComponents';
 
 interface IProps extends IOptions {
   guests: { children: number; adults: number };

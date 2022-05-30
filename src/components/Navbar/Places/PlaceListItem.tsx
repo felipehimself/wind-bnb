@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { IPlaces } from '../../interfaces/dataInterface';
-import locationPin from '././../../assets/location.svg';
-import { Colors } from '../../constants/colors';
+import { IPlaces } from '../../../interfaces/dataInterface';
+import locationPin from '././../../../assets/location.svg';
+import { Colors } from '../../../constants/colors';
 
 interface IProps extends IPlaces {
   setLocation: React.Dispatch<React.SetStateAction<string>>;

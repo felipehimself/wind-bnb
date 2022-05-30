@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { useGlobalContext } from '../../store/context';
-import { IisFocused } from '../../interfaces/propsInterfaces';
-import PlacesList from './PlacesList';
+import { useGlobalContext } from '../../../store/context';
+import { IisFocused } from '../../../interfaces/propsInterfaces';
+import PlacesList from '../Places/PlacesList';
 import OptionsList from './OptionsList';
-import { Button } from '../../styles/GlobalStyledComponents';
+import { Button } from '../../../styles/GlobalStyledComponents';
 
 const OptionsContainer: React.FC = () => {
   const {

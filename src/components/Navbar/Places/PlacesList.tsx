@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { useGlobalContext } from '../../store/context';
-import PlaceListItem from '../ui/PlaceListItem';
-import { IisFocused } from '../../interfaces/propsInterfaces';
+import { useGlobalContext } from '../../../store/context';
+import PlaceListItem from './PlaceListItem';
+import { IisFocused } from '../../../interfaces/propsInterfaces';
 
 const PlacesList: React.FC = () => {
   const { data, isFocused, setLocation } = useGlobalContext();

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Colors } from '../../constants/colors';
-import { useGlobalContext } from '../../store/context';
-import { IisFocused } from '../../interfaces/propsInterfaces';
+import { Colors } from '../../../constants/colors';
+import { useGlobalContext } from '../../../store/context';
+import { IisFocused } from '../../../interfaces/propsInterfaces';
 const AddGuestsItem = () => {
   const { isFocused, guests, setIsFocused } = useGlobalContext();
 

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import logo from './../../assets/logo.svg';
-import LocationInput from '../ui/LocationInput';
-import AddGuestsItem from '../ui/AddGuestsItem';
-import SearchButton from '../ui/SearchButton';
+import LocationInput from './Input/LocationInput';
+import AddGuestsItem from './AddGuests/AddGuestsItem';
+import SearchButton from './Search/SearchButton';
 import NavItensContainer from './NavItensContainer';
 import { useGlobalContext } from '../../store/context';
 

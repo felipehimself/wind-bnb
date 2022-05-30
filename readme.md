@@ -8,6 +8,8 @@
 - [Instruções para rodar o projeto](#instrucoes)
 - [Organização e estruturação do projeto](#organizacao)
 - [Desenvolvimento](#desenvolvimento)
+- [Imagens](#imagens)
+
 
 ## Tecnologias Utilizadas <a name="tecnologias"></a>
 
@@ -55,7 +57,7 @@ npm run dev
 O projeto está organizado e estruturado da seguinte forma:
 
 ```
-      .eslintrc.json
+│   .eslintrc.json
 │   .gitignore
 │   index.html
 │   package-lock.json
@@ -79,22 +81,33 @@ O projeto está organizado e estruturado da seguinte forma:
     │       star.svg
     │
     ├───components
-    │   ├───elements
+    │   ├───Header
     │   │       Header.tsx
-    │   │       Main.tsx
-    │   │       NavBar.tsx
-    │   │       NavItensContainer.tsx
-    │   │       OptionsContainer.tsx
-    │   │       OptionsList.tsx
-    │   │       PlacesList.tsx
-    │   │       StaysList.tsx
     │   │
-    │   └───ui
-    │           AddGuestsItem.tsx
-    │           LocationInput.tsx
-    │           OptionsItem.tsx
-    │           PlaceListItem.tsx
-    │           SearchButton.tsx
+    │   ├───Navbar
+    │   │   │   NavBar.tsx
+    │   │   │   NavItensContainer.tsx
+    │   │   │
+    │   │   ├───AddGuests
+    │   │   │       AddGuestsItem.tsx
+    │   │   │
+    │   │   ├───Input
+    │   │   │       LocationInput.tsx
+    │   │   │
+    │   │   ├───Options
+    │   │   │       OptionsContainer.tsx
+    │   │   │       OptionsItem.tsx
+    │   │   │       OptionsList.tsx
+    │   │   │
+    │   │   ├───Places
+    │   │   │       PlaceListItem.tsx
+    │   │   │       PlacesList.tsx
+    │   │   │
+    │   │   └───Search
+    │   │           SearchButton.tsx
+    │   │
+    │   └───Stays
+    │           StaysList.tsx
     │           StaysListItem.tsx
     │
     ├───constants
@@ -106,6 +119,9 @@ O projeto está organizado e estruturado da seguinte forma:
     ├───interfaces
     │       dataInterface.ts
     │       propsInterfaces.ts
+    │
+    ├───shared
+    │       Main.tsx
     │
     ├───store
     │       context.tsx
@@ -122,3 +138,19 @@ O projeto está organizado e estruturado da seguinte forma:
 Para realizar a estilização, foi utilizado o framework [**Styled Components**](https://styled-components.com/).
 
 Para realizar a utilização de ícones, foi utilizado o package [**React Icons**](https://react-icons.github.io/react-icons/).
+
+
+## Imagens <a name="imagens" ></a>
+
+### Desktop
+
+<img src='./src/imagens/img-1.PNG' alt='home' width="500" /> 
+<img src='./src/imagens/img-2.PNG' alt='home' width="500" /> 
+<img src='./src/imagens/img-3.PNG' alt='home' width="500" /> 
+
+### Mobile
+
+<img src='./src/imagens/img-4.PNG' alt='home' width="500" /> 
+<img src='./src/imagens/img-5.PNG' alt='home' width="500" /> 
+<img src='./src/imagens/img-6.PNG' alt='home' width="500" /> 
+
