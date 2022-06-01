@@ -1,8 +1,7 @@
-import styled from 'styled-components';
 import { useGlobalContext } from '../../../store/context';
 import PlaceListItem from './PlaceListItem';
-import { IisFocused } from '../../../interfaces/propsInterfaces';
 
+import { Ul } from './styles';
 const PlacesList: React.FC = () => {
   const { data, isFocused, setLocation } = useGlobalContext();
 
@@ -10,18 +9,19 @@ const PlacesList: React.FC = () => {
     ...new Map(data.map((item) => [item['city'], item])).values(),
   ];
 
-
   return (
-    <Wrapper isFocused={isFocused}>
+    <Ul isFocused={isFocused}>
       {uniqueCities.map((place) => {
-        return <PlaceListItem key={place.title} setLocation={setLocation} {...place} />;
+        return (
+          <PlaceListItem
+            key={place.title}
+            setLocation={setLocation}
+            {...place}
+          />
+        );
       })}
-    </Wrapper>
+    </Ul>
   );
 };
 
-const Wrapper = styled.ul<IisFocused>`
-  margin-left: 1rem;
-  flex: 1;
-`;
 export default PlacesList;

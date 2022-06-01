@@ -1,11 +1,10 @@
-import styled from 'styled-components';
 import { options } from '../../../data/data';
 import { useGlobalContext } from '../../../store/context';
 import OptionsItem from './OptionsItem';
-
+import * as Style from './style';
 const OptionsList = () => {
   const { guests, setGuests } = useGlobalContext();
-  
+
   const defineGuests = (type: string, option: string) => {
     if (option === 'add') {
       return setGuests((prev) => {
@@ -25,18 +24,19 @@ const OptionsList = () => {
   };
 
   return (
-    <Wrapper>
+    <Style.ContainerColumn>
       {options.map((option) => {
-        return <OptionsItem key={option.type} guests={guests} defineGuests={defineGuests} {...option} />;
+        return (
+          <OptionsItem
+            key={option.type}
+            guests={guests}
+            defineGuests={defineGuests}
+            {...option}
+          />
+        );
       })}
-    </Wrapper>
+    </Style.ContainerColumn>
   );
 };
-
-const Wrapper = styled.div`
-  flex-direction: column;
-  flex: 1;
-
-`;
 
 export default OptionsList;

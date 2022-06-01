@@ -1,71 +1,26 @@
-import styled from 'styled-components';
-import { FlexContainer } from '../../styles/GlobalStyledComponents';
+import { FlexContainer } from '../../shared/GlobalStyledComponents';
 import { IPlaces } from '../../interfaces/dataInterface';
 import star from './../../assets/star.svg';
-import { Colors } from '../../constants/colors';
+import * as Style from './style';
 
-const StaysListItem: React.FC<IPlaces> = ({
-  beds,
-  city,
-  country,
-  maxGuests,
-  photo,
-  rating,
-  superHost,
-  title,
-  type,
-}) => {
+const StaysListItem: React.FC<IPlaces> = ({ photo, rating, title, type }) => {
   return (
-    <Article>
-      <div className='img-container'>
-        <img className='img-container__img' src={photo} alt={title} />
-      </div>
+    <Style.Article>
+      <Style.Container>
+        <Style.Img src={photo} alt={title} />
+      </Style.Container>
       <FlexContainer margin='1rem 0 0 0'>
-        <p className='type'>{type}</p>
+        <Style.P>{type}</Style.P>
         <FlexContainer>
-          <img className='rating-icon' src={star} alt='rating' />
-          <span className='rating-text'>{rating}</span>
+          <Style.Icon src={star} alt='rating' />
+          <Style.Span>{rating}</Style.Span>
         </FlexContainer>
       </FlexContainer>
-      <p className='description'>{title}</p>
-    </Article>
+      <Style.P size='1.4rem' weight='bold'>
+        {title}
+      </Style.P>
+    </Style.Article>
   );
 };
 
-const Article = styled.article`
-  width: 100%;
-
-  .img-container {
-    max-height: 24rem;
-    overflow: hidden;
-    border-radius: 2rem;
-
-  }
-
-  .img-container__img {
-    display: block;
-    width: 100%;
-  }
-
-  .type {
-    font-size: 1.3rem;
-    color: ${() => Colors.colorDarkGray};
-  }
-
-  .description {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: ${() => Colors.colorDarkGray};
-  }
-
-  .rating-text {
-    font-size: 1.3rem;
-  }
-
-  .rating-icon {
-    height: 2rem;
-    filter: invert(47%) sepia(53%) saturate(2558%) hue-rotate(330deg)
-      brightness(100%) contrast(82%);
-  }
-`;
 export default StaysListItem;

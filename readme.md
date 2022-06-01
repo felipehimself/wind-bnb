@@ -57,16 +57,6 @@ npm run dev
 O projeto está organizado e estruturado da seguinte forma:
 
 ```
-│   .eslintrc.json
-│   .gitignore
-│   index.html
-│   package-lock.json
-│   package.json
-│   readme.md
-│   tsconfig.json
-│   tsconfig.node.json
-│   vite.config.ts
-│
 └───src
     │   App.tsx
     │   favicon.svg
@@ -83,52 +73,63 @@ O projeto está organizado e estruturado da seguinte forma:
     ├───components
     │   ├───Header
     │   │       Header.tsx
+    │   │       styles.ts
+    │   │
+    │   ├───Main
+    │   │       Main.tsx
+    │   │       style.ts
     │   │
     │   ├───Navbar
     │   │   │   NavBar.tsx
     │   │   │   NavItensContainer.tsx
+    │   │   │   style.ts
     │   │   │
     │   │   ├───AddGuests
     │   │   │       AddGuestsItem.tsx
+    │   │   │       style.ts
     │   │   │
     │   │   ├───Input
     │   │   │       LocationInput.tsx
+    │   │   │       style.ts
     │   │   │
     │   │   ├───Options
     │   │   │       OptionsContainer.tsx
     │   │   │       OptionsItem.tsx
     │   │   │       OptionsList.tsx
+    │   │   │       style.ts
     │   │   │
     │   │   ├───Places
     │   │   │       PlaceListItem.tsx
     │   │   │       PlacesList.tsx
+    │   │   │       styles.ts
     │   │   │
     │   │   └───Search
     │   │           SearchButton.tsx
+    │   │           style.ts
     │   │
     │   └───Stays
     │           StaysList.tsx
     │           StaysListItem.tsx
+    │           style.ts
     │
     ├───constants
     │       colors.ts
     │
     ├───data
     │       data.ts
-    │
+    │    │
     ├───interfaces
     │       dataInterface.ts
     │       propsInterfaces.ts
     │
     ├───shared
-    │       Main.tsx
+    │       GlobalStyledComponents.tsx
     │
     ├───store
     │       context.tsx
     │
     └───styles
             GlobalCSS.tsx
-            GlobalStyledComponents.tsx
 ```
 
 ## Desenvolvimento <a name="desenvolvimento" ></a>

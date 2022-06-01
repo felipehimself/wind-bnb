@@ -12,14 +12,14 @@ export const Button = styled.button`
   cursor: pointer;
   padding: 1rem 2rem;
   border: none;
-  color: ${() => Colors.colorWhite};
-  background-color: ${() => Colors.colorPrimary};
+  color: ${Colors.colorWhite};
+  background-color: ${Colors.colorPrimary};
   border-radius: 1rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
 
   :hover {
-    background-color: ${() => Colors.colorPrimaryTint};
+    background-color: ${Colors.colorPrimaryTint};
   }
 `;
 
@@ -31,19 +31,19 @@ export const ButtonOptions = styled.button`
   border: none;
   width: 1.8rem;
   height: 1.8rem;
-  border: ${() => '1px solid ' + Colors.colorGrayLight};
+  border: ${'1px solid ' + Colors.colorGrayLight};
   border-radius: 4px;
   cursor: pointer;
 `;
 
 export const H1 = styled.h1`
   font-size: 2.6rem;
-  color: ${() => Colors.colorDarkGray};
+  color: ${Colors.colorDarkGray};
 `;
 
 export const H3 = styled.h3`
   font-size: 1.6rem;
-  color: ${() => Colors.colorGrayLight};
+  color: ${Colors.colorGrayLight};
   align-self: flex-end;
 `;
 

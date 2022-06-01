@@ -1,8 +1,7 @@
 import GlobalCSS from './styles/GlobalCSS';
-import NavBar from './components/Navbar/NavBar';
-import { Container } from './styles/GlobalStyledComponents';
+import { Container } from './shared/GlobalStyledComponents';
 import Header from './components/Header/Header';
-import Main from './shared/Main';
+import Main from './components/Main/Main';
 
 const App: React.FC = () => {
   return (
