@@ -7,19 +7,25 @@ export const Section = styled.section`
   gap: 3rem;
 `;
 
-export const Article = styled.article`
-  width: 100%;
-`;
 export const Container = styled.div`
   max-height: 24rem;
   overflow: hidden;
   border-radius: 2rem;
-`;
+  `;
 
 export const Img = styled.img`
   display: block;
   width: 100%;
-`;
+  transition: transform 0.3s ease;
+  `;
+  export const Article = styled.article`
+    width: 100%;
+
+    :hover ${Img}{
+      transform: scale(1.01)
+    }
+  
+  `;
 
 interface IStyle {
   size?: string;

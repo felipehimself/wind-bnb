@@ -11,7 +11,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: 2,
     photo:
-      'https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2255&q=80',
+      'https://i.ibb.co/nkM6j7N/img-1.jpg',
   },
   {
     city: 'Turku',
@@ -23,7 +23,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: 3,
     photo:
-      'https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+      'https://i.ibb.co/HNvX684/img-2.jpg',
   },
   {
     city: 'Helsinki',
@@ -35,7 +35,7 @@ const places: IPlaces[] = [
     type: 'Entire house',
     beds: 6,
     photo:
-      'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+      'https://i.ibb.co/vjfr02D/img-3.jpg',
   },
   {
     city: 'Helsinki',
@@ -47,7 +47,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: null,
     photo:
-      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80',
+      'https://i.ibb.co/3F1h1LD/img-4.jpg',
   },
   {
     city: 'Turku',
@@ -59,7 +59,7 @@ const places: IPlaces[] = [
     type: 'Entire house',
     beds: null,
     photo:
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2249&q=80',
+      'https://i.ibb.co/5xt0M1M/img-5.jpg',
   },
   {
     city: 'Vaasa',
@@ -71,7 +71,7 @@ const places: IPlaces[] = [
     type: 'Entire house',
     beds: null,
     photo:
-      'https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+      'https://i.ibb.co/sg8rkCk/img-6.jpg',
   },
   {
     city: 'Vaasa',
@@ -83,7 +83,7 @@ const places: IPlaces[] = [
     type: 'Private room',
     beds: null,
     photo:
-      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      'https://i.ibb.co/fnHP30K/img-7.jpg',
   },
   {
     city: 'Oulu',
@@ -95,7 +95,7 @@ const places: IPlaces[] = [
     type: 'Entire house',
     beds: 3,
     photo:
-      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+      'https://i.ibb.co/HCJB1br/img-8.jpg',
   },
   {
     city: 'Oulu',
@@ -107,7 +107,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: 1,
     photo:
-      'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80',
+      'https://i.ibb.co/8rhmLdv/img-9.jpg',
   },
   {
     city: 'Oulu',
@@ -119,7 +119,7 @@ const places: IPlaces[] = [
     type: 'Entire house',
     beds: null,
     photo:
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      'https://i.ibb.co/xjNLcWf/img-10.jpg',
   },
   {
     city: 'Vaasa',
@@ -131,7 +131,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: 3,
     photo:
-      'https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80',
+      'https://i.ibb.co/KrVbF6F/img-11.jpg',
   },
   {
     city: 'Helsinki',
@@ -143,7 +143,7 @@ const places: IPlaces[] = [
     type: 'Entire house',
     beds: null,
     photo:
-      'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80',
+      'https://i.ibb.co/rfJp6wy/img-12.jpg',
   },
   {
     city: 'Turku',
@@ -155,7 +155,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: 3,
     photo:
-      'https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE3MzYxfQ&auto=format&fit=crop&w=2253&q=80',
+      'https://i.ibb.co/gMCWG5G/img-13.jpg',
   },
   {
     city: 'Turku',
@@ -167,7 +167,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: 3,
     photo:
-      'https://images.unsplash.com/photo-1501876725168-00c445821c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      'https://i.ibb.co/0MPYMjm/img-14.jpg',
   },
   {
     city: 'Vaasa',
@@ -179,7 +179,7 @@ const places: IPlaces[] = [
     type: 'Entire apartment',
     beds: 4,
     photo:
-      'https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80',
+      'https://i.ibb.co/cLZ74cT/img-15.jpg',
   },
 ];
 
