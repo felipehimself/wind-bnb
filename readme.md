@@ -151,7 +151,7 @@ Para realizar a utilização de ícones, foi utilizado o package [**React Icons*
 
 ### Mobile
 
-<img src='./screenshots/img-4.PNG' alt='home' width="500" /> 
-<img src='./screenshots/img-5.PNG' alt='home' width="500" /> 
-<img src='./screenshots/img-6.PNG' alt='home' width="500" /> 
+<img src='./screenshots/img-4.PNG' alt='home' width="340" /> 
+<img src='./screenshots/img-5.PNG' alt='home' width="340" /> 
+<img src='./screenshots/img-6.PNG' alt='home' width="340" /> 
 
